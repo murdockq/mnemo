@@ -1,4 +1,3 @@
-
 # mnemo for go
 
 [![Build Status](https://secure.travis-ci.org/murdockq/mnemo.svg)](http://travis-ci.org/murdockq/mnemo)
@@ -6,6 +5,7 @@
 A port of [mnemo](https://github.com/flon-io/mnemo) from C to Go lang. Mnemo and mnemo for go are inspired by the work of [rufus-mnemo](https://github.com/jmettraux/rufus-mnemo) and the ruby port [munemo](https://github.com/jmettraux/munemo).
 
 Munemo uses the following syllables to map integer numbers to strings.
+
 ```go
     var syllables = []string{
         "ba", "bi", "bu", "be", "bo",
@@ -30,9 +30,11 @@ Munemo uses the following syllables to map integer numbers to strings.
         "za", "zi", "zu", "ze", "zo",
     }
 ```
+
 The syllable `xa` prefixes negative numbers.
 
 Interface:
+
 ```go
 import  "github.com/murdockq/mnemo"
 
@@ -67,7 +69,7 @@ mnemo.ToInt('tonukatsu') // => 79523582
 // mnemo.Convert(var)
 
 mnemo.Convert(99) // => 'zo'
-mnemo.ToString('zo') // => 99 
+mnemo.ToString('zo') // => 99
 
 ```
 
