@@ -4,5 +4,6 @@ go:
  - release
  - tip
 
+
 script:
  - go test -v ./...
